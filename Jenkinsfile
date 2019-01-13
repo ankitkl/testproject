@@ -14,6 +14,11 @@ pipeline {
         
       }
     }
+    stage('VeridicDemo') {
+      steps {
+        sh 'echo "Veridic Solution Step"'
+      }
+    }
     stage('Test') {
       steps {
         parallel(
