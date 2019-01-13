@@ -6,6 +6,11 @@ pipeline {
         sh 'echo "Initilize Step"'
       }
     }
+    stage('Initialize2') {
+      steps {
+        sh 'echo "Initilize Step"'
+      }
+    }
     stage('Build') {
       steps {
         ws(dir: 'sample') {
